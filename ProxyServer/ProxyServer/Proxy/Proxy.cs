@@ -215,7 +215,7 @@ namespace ProxyServer
             // Create client for target host
             string host = request.GetHost();
             TcpClient Client = new TcpClient();
-            Client.Client.Connect(host, 80);
+            Client.Connect(host, 80);
             
             AddMessageToLog("HOST: "+host);
             using NetworkStream ClientStream = Client.GetStream();
