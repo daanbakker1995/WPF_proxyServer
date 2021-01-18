@@ -98,7 +98,7 @@ Hieronder een voorbeeld van een request en een resposnse:
 ### Case verwacht gedrag
 
 | Case Naam | Handeling |  Verwacht gedrag |
-|----------|:-------------:|------:|
+|----------|----------|------|
 | Case 1: |  - | - |
 | Case 2: |  - | - |
 | Case 3: |  - | - |
