@@ -22,8 +22,8 @@ Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een wi
 
 ##  TCP/IP
 ###  Beschrijving van concept in eigen woorden
-#### TCP - TCP staat voor Transmission Control Protocol. In het nederlands Overdracht controle protocol.
-#### IP - IP staat voor Internet protocol. Een protocol wat dus bedoeld is voor over het internet.
+#### TCP staat voor Transmission Control Protocol. In het nederlands Overdracht controle protocol.
+#### IP staat voor Internet protocol. Een protocol wat dus bedoeld is voor over het internet.
 
 > Een protocol is een soort verzameling van afspraken waar gebruikers zich aan dienen te houden.
 
