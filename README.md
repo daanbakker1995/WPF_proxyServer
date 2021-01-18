@@ -16,7 +16,7 @@ Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een wi
 (Teken een diagram en licht de onderdelen toe)
 
 
-##  Zorg voor een voorbeeld van een http-request en van een http-response. 
+##  Voorbeeld van een http-request en van een http-response. 
 (Kan je globale overeenkomsten vinden tussen een request en een response?)  (Teken een diagram en licht de onderdelen toe)
 
 
