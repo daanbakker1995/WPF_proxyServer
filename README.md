@@ -2,7 +2,6 @@
 
 Studentnaam: Daan Bakker  
 Studentnummer: 601945
--- 
 
 # Algemene beschrijving applicatie
 
