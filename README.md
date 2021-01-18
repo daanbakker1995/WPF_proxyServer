@@ -77,17 +77,15 @@ Een alternatief voor het gebruik van TCP is UDP. UDP is zoals al eerder benoemd 
 ##  Bestudeer de RFC van HTTP 1.1.
 ###  Hoe ziet de globale opbouw van een HTTP bericht er uit? (Teken een diagram en licht de onderdelen toe)
 Een HTTP Message bevat het volgende: 
-Een startline - dit kan een request line zijn of een status line.
 
+- Een startline dit kan een request line zijn of een status line.
 Request line
 `GET /HTTP/1.1`
 Status line
 `HTTP/1.1 200 OK`
-Verder bevat een message overige headers.
-
-Hierna een lege lijn. Dit geeft het einde van de headers aan.
-
-Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML bestand, afbeelding of video zijn.
+- Verder bevat een message overige headers.
+- Hierna een lege lijn. Dit geeft het einde van de headers aan.
+- Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML bestand, afbeelding of video zijn.
 Hieronder een voorbeeld van een request en een resposnse:
 
 ![HTTP Message](http.png)
