@@ -35,6 +35,8 @@ Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol 
 - Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
 
 ###  Code voorbeeld van je eigen code
+Hieronder is een stuk code uit de multichat app. In deze code is te zien hoe er data word ontvangen aan de hand van een networkstream.
+Deze data word als bytes ontvangen en vervolgens met een stringbuilder samen gevoegd tot een bericht. Deze chat app maakt gebruik van een endOfTransmissionCharacter (een character om het einde van het bericht aan te geven). Hierna word dit character van het bericht af gehaald en toegevoegd aan UI. Omdat deze code zich op de server bevind word het bericht gebroadcast naar de aangesloten clients van de chat. 
 ```
 while (networkStream != null && networkStream.CanRead)
 {
