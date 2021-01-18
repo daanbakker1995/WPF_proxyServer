@@ -11,7 +11,9 @@ In deze applicatie is een proxy server ontwikkeld op basis van het TCP-Protocol.
 ![Proxy_server](https://static.packt-cdn.com/products/9781789532975/graphics/de402723-a3f2-4d4b-b290-563b7cdbc32d.png)
 
 
-##  Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een willekeurige PC opvangt en doorstuurt naar één webserver. (Teken een diagram en licht de onderdelen toe)
+##  Ontwerp architectuur
+Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een willekeurige PC opvangt en doorstuurt naar één webserver. 
+(Teken een diagram en licht de onderdelen toe)
 
 
 ##  Zorg voor een voorbeeld van een http-request en van een http-response. 
