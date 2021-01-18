@@ -99,9 +99,11 @@ Hieronder een voorbeeld van een request en een resposnse:
 
 | Case Naam | Handeling |  Verwacht gedrag |
 |----------|----------|------|
-| Case 1: |  - | - |
-| Case 2: |  - | - |
-| Case 3: |  - | - |
+| 1.Tekst in ipadres |  voer tekst in het veld in | foutmelding server start niet |
+| 2.Tekst in port nummer | voer tekst in het veld in | foutmelding server start niet |
+| 3.Tekst in buffergrootte | voer tekst in het veld in | foutmelding server start niet |
+| 4.Geen ipadres in ipadres veld |  voer '12345' in het veld in | foutmelding server start niet |
+| 5.Geen waardes |  voer niks in invoervelden in | foutmelding server start niet |
 
 
 
