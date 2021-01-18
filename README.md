@@ -35,7 +35,7 @@ Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol 
 - Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
 
 ###  Code voorbeeld van je eigen code
-<code> 
+```
   while (networkStream != null && networkStream.CanRead)
                     {
                         // Receive data from stream
@@ -63,7 +63,8 @@ Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol 
                             stringBuilder = new StringBuilder();
                         }
                     } 
-</code>
+```
+
 ###  Alternatieven & adviezen
 ###  Authentieke en gezaghebbende bronnen
 
