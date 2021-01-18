@@ -29,7 +29,7 @@ Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een wi
 
 #### Lagen
 Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol bestaat uit verschillende lagen:
-- Applicatie laag - Deze laag word gebruikt door programma's zoals een browser gebruikt om mee te communiceren. Een bekend protocol van deze laag is het HTTP 
+- Applicatie laag - Deze laag word gebruikt door programma's zoals een browser gebruikt om mee te communiceren. Een bekend protocol van deze laag is het Hypertext Transfer Protocol (HTTP).
 - Transport laag - In deze laag word gebruik gemaakt van TCP en UDP. TCP en UDP pakken de data die moet worden verzonden en maken hier kleine pakketjes van. UDP is sneller maar dit heeft zijn risico's zoals het verliezen van verzonden pakketjes. Dit word vaak gebruikt voor video bellen. (Een verloren pakketje bijvoorbeeld wanneer de camera van je gesprekspartner tijdelijk blijft hangen). TCP doet dit niet deze stuurt een pakket opnieuw wanneer deze niet aan komt. Hierdoor blijft het verzonden bericht zoals deze is bedoeld. Om ervoor te zorgen dat duidelijk is welke pakketjes er bij elkaar horen worden deze samen verstuurt met een Header.
 - Internet laag - Over deze laag worden de pakketjes uit de transport laag verstuurt naar het uitiendelijke adres waar deze voor bedoelt zijn. Dit word gedaan aan de hand van het IP protocol.
 - Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
