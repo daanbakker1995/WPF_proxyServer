@@ -97,6 +97,13 @@ Hieronder een voorbeeld van een request en een resposnse:
 ### Case handeling
 ### Case verwacht gedrag
 
+| Case Naam | Handeling |  Verwacht gedrag |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+
 # Kritische reflectie op eigen beroepsproduct
 
 ### Definieer kwaliteit in je architectuur, design, implementatie. 
