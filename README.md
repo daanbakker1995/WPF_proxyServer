@@ -22,7 +22,7 @@ Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een wi
 
 ##  TCP/IP
 ###  Beschrijving van concept in eigen woorden
-#### TCP staat voor Transmission Control Protocol. In het nederlands Overdracht controle protocol.
+#### TCP staat voor Transmission Control Protocol. Dit is een Overdracht controle protocol.
 #### IP staat voor Internet protocol. Een protocol wat dus bedoeld is voor over het internet.
 
 > Een protocol is een soort verzameling van afspraken waar gebruikers zich aan dienen te houden.
@@ -35,6 +35,34 @@ Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol 
 - Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
 
 ###  Code voorbeeld van je eigen code
+<code> while (networkStream != null && networkStream.CanRead)
+                    {
+                        // Receive data from stream
+                        byte[] byteArray = new byte[BUFFERSIZE];
+                        int resultSize = networkStream.Read(byteArray, 0, BUFFERSIZE);
+                        string message = Encoding.ASCII.GetString(byteArray, 0, resultSize);
+                        
+                        // Make one message from received bytes
+                        StringBuilder stringBuilder = new StringBuilder();
+                        stringBuilder.Append(message);
+                        
+                        //end of Message
+                        if (message.EndsWith(EndOfTransitionCharacter))
+                        {
+                            // Make message readable
+                            string clientMessage = stringBuilder.ToString(); 
+                            clientMessage = clientMessage.Remove(clientMessage.Length - EndOfTransitionCharacter.Length);
+                            if (clientMessage == "bye")
+                                break;
+                            // Display message in chat
+                            AddMessageToChat(clientMessage);
+                            // Send message to other connected clients
+                            BroadCast(clientMessage, tcpClient);
+                            // Empty stringBuilder for new message
+                            stringBuilder = new StringBuilder();
+                        }
+                    } 
+</code>
 ###  Alternatieven & adviezen
 ###  Authentieke en gezaghebbende bronnen
 
