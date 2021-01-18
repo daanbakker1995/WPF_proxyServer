@@ -29,11 +29,13 @@ IP staat voor Internet protocol. Een protocol wat dus bedoeld is voor over het i
 
 Een protocol is een soort verzameling van afspraken waar gebruikers zich aan dienen te houden.
 
+#### Lagen
 Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol bestaat uit verschillende lagen:
-- Applicaite laag - 
-- Transport laag -
-- Internet laag -
-- Netwerk laag -
+- Applicaite laag - Deze laag word gebruikt door programma's zoals een browser gebruikt om mee te communiceren. Een bekend protocol van deze laag is het HTTP 
+- Transport laag - In deze laag word gebruik gemaakt van TCP en UDP. TCP en UDP pakken de data die moet worden verzonden en maken hier kleine pakketjes van. UDP is sneller maar dit heeft zijn risico's zoals het verliezen van verzonden pakketjes. Dit word vaak gebruikt voor video bellen. (Een verloren pakketje bijvoorbeeld wanneer de camera van je gesprekspartner tijdelijk blijft hangen). TCP doet dit niet deze stuurt een pakket opnieuw wanneer deze niet aan komt. Hierdoor blijft het verzonden bericht zoals deze is bedoeld. Om ervoor te zorgen dat duidelijk is welke pakketjes er bij elkaar horen worden deze samen verstuurt met een Header.
+- Internet laag - Over deze laag worden de pakketjes uit de transport laag verstuurt naar het uitiendelijke adres waar deze voor bedoelt zijn. Dit word gedaan aan de hand van het IP protocol.
+- Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
+
 ###  Code voorbeeld van je eigen code
 ###  Alternatieven & adviezen
 ###  Authentieke en gezaghebbende bronnen
