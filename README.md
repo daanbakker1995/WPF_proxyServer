@@ -87,7 +87,7 @@ Verder bevat een message overige headers.
 
 Hierna een lege lijn. Dit geeft het einde van de headers aan.
 
-Hieronder een Body. Dit kan bijvoorbeeld een HTML bestand zijn of een afbeelding/video.
+Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML, afbeelding of video bestand zijn.
 
 ![HTTP Message](http.png)
 ###  Uit welke componenten bestaan een HTTP bericht.  (Teken een diagram en licht de onderdelen toe)
