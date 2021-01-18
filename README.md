@@ -91,11 +91,6 @@ Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML bestand, afbeelding 
 Hieronder een voorbeeld van een request en een resposnse:
 ![HTTP Message](http.png)
 
-
-###  Uit welke componenten bestaan een HTTP bericht.  (Teken een diagram en licht de onderdelen toe)
-###  Hoe wordt de content in een bericht verpakt? (Teken een diagram en licht de onderdelen toe)
-###  Streaming content 
-
 ##  Kritische reflectie op eigen werk (optioneel, maar wel voor een 10)
 ###  Wat kan er beter? Geef aan waarom?
 ###  Wat zou je een volgende keer anders doen?
