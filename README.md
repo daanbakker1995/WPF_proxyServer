@@ -91,11 +91,6 @@ Hieronder een voorbeeld van een request en een resposnse:
 
 ![HTTP Message](http.png)
 
-##  Kritische reflectie op eigen werk (optioneel, maar wel voor een 10)
-###  Wat kan er beter? Geef aan waarom?
-###  Wat zou je een volgende keer anders doen?
-###  Hoe zou de opdracht anders moeten zijn om er meer van te leren?
-
 # Test cases
 
 ### Case naam
