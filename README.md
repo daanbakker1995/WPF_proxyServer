@@ -86,6 +86,7 @@ Status line
 - Verder bevat een message overige headers.
 - Hierna een lege lijn. Dit geeft het einde van de headers aan.
 - Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML bestand, afbeelding of video zijn.
+
 Hieronder een voorbeeld van een request en een resposnse:
 
 ![HTTP Message](http.png)
