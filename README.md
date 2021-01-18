@@ -71,7 +71,7 @@ while (networkStream != null && networkStream.CanRead)
 Een alternatief voor het gebruik van TCP is UDP. UDP is zoals al eerder benoemd niet geschikt wanneer pakketjes in zijn geheel een boodschap vormen. Zoals in een chat applicatie. UDP is wel uitstekend voor video bellen omdat het veel sneller is dan TCP. Ook voor spellen zou dit geen probleem moeten zijn wanneer je een online multiplayer spel ontwikkeld. Hierdoor hebben de gebruikers snel een reactie van wat de andere speler doet. 
 ###  Authentieke en gezaghebbende bronnen
 - [IETF Tools over TCP](https://tools.ietf.org/html/rfc793)
-- [Docs microsoft - TcpCLient](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.tcpclient?view=net-5.0)
+- [Docs microsoft - NetworkStream](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.networkstream?view=net-5.0)
 
 
 ##  Bestudeer de RFC van HTTP 1.1.
