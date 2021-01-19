@@ -6,15 +6,14 @@ Studentnummer: 601945
 # Algemene beschrijving applicatie
 
 Een .NET C# WPF applicatie voor de course NOTS WIN.
-In deze applicatie is een proxy server ontwikkeld op basis van het TCP-Protocol. Die het HTTP protocol na bootst.
+In deze applicatie is een proxy server ontwikkeld op basis van het TCP-Protocol. Die het HTTP protocol nabootst.
 
 ![Proxy_server](https://static.packt-cdn.com/products/9781789532975/graphics/de402723-a3f2-4d4b-b290-563b7cdbc32d.png)
 
 
 ##  Ontwerp architectuur
-Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een willekeurige PC opvangt en doorstuurt naar één webserver. 
+Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een willekeurige PC opvangt en doorstuurt naar een webserver. 
 (Teken een diagram en licht de onderdelen toe)
-
 
 ##  Voorbeeld van een http-request en van een http-response. 
 (Kan je globale overeenkomsten vinden tussen een request en een response?)  (Teken een diagram en licht de onderdelen toe)
@@ -29,14 +28,14 @@ Ontwerp en bouw de *architectuur* van de applicatie die HTTP-requests van een wi
 
 #### Lagen
 Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol bestaat uit verschillende lagen:
-- Applicatie laag - Deze laag word gebruikt door programma's zoals een browser gebruikt om mee te communiceren. Een bekend protocol van deze laag is het Hypertext Transfer Protocol (HTTP).
-- Transport laag - In deze laag word gebruik gemaakt van TCP en UDP. TCP en UDP pakken de data die moet worden verzonden en maken hier kleine pakketjes van. UDP is sneller maar dit heeft zijn risico's zoals het verliezen van verzonden pakketjes. Dit word vaak gebruikt voor video bellen. (Een verloren pakketje bijvoorbeeld wanneer de camera van je gesprekspartner tijdelijk blijft hangen). TCP doet dit niet deze stuurt een pakket opnieuw wanneer deze niet aan komt. Hierdoor blijft het verzonden bericht zoals deze is bedoeld. Om ervoor te zorgen dat duidelijk is welke pakketjes er bij elkaar horen worden deze samen verstuurt met een Header.
-- Internet laag - Over deze laag worden de pakketjes uit de transport laag verstuurt naar het uitiendelijke adres waar deze voor bedoelt zijn. Dit word gedaan aan de hand van het IP protocol.
+- Applicatie laag - Deze laag wordt gebruikt door programma's zoals een browser gebruikt om mee te communiceren. Een bekend protocol van deze laag is het Hypertext Transfer Protocol (HTTP).
+- Transport laag - In deze laag wordt gebruik gemaakt van TCP en UDP. TCP en UDP pakken de data die moet worden verzonden en maken hier kleine pakketjes van. UDP is sneller maar dit heeft zijn risico's zoals het verliezen van verzonden pakketjes. Dit wordt vaak gebruikt voor video bellen. (Een verloren pakketje bijvoorbeeld wanneer de camera van je gesprekspartner tijdelijk blijft hangen). TCP doet dit niet deze stuurt een pakket opnieuw wanneer deze niet aan komt. Hierdoor blijft het verzonden bericht zoals deze is bedoeld. Om ervoor te zorgen dat duidelijk is welke pakketjes er bij elkaar horen worden deze samen verstuurt met een Header.
+- Internet laag - Over deze laag worden de pakketjes uit de transportlaag verstuurt naar het uiteindelijk adres waar deze voor bedoeld zijn. Dit wordt gedaan aan de hand van het IP protocol.
 - Netwerk laag - Op deze laag worden de pakketjes verstuurt naar het juiste apparaat die de boodschap moet ontvangen.
 
 ###  Code voorbeeld van je eigen code
-Hieronder is een stuk code uit de multichat app. In deze code is te zien hoe er data word ontvangen aan de hand van een networkstream.
-Deze data word als bytes ontvangen en vervolgens met een stringbuilder samen gevoegd tot een bericht. Deze chat app maakt gebruik van een endOfTransmissionCharacter (een character om het einde van het bericht aan te geven). Hierna word dit character van het bericht af gehaald en toegevoegd aan UI. Omdat deze code zich op de server bevind word het bericht gebroadcast naar de aangesloten clients van de chat. 
+Hieronder is een stuk code uit de multichat app. In deze code is te zien hoe er data wordt ontvangen aan de hand van een networkstream.
+Deze data wordt als bytes ontvangen en vervolgens met een stringbuilder samengevoegd tot een bericht. Deze chat app maakt gebruik van een endOfTransmissionCharacter (een karakter om het einde van het bericht aan te geven). Hierna wordt dit karakter van het bericht af gehaald en toegevoegd aan UI. Omdat deze code zich op de server bevindt, wordt het bericht gebroadcast naar de aangesloten clients van de chat. 
 ```
 while (networkStream != null && networkStream.CanRead)
 {
@@ -87,7 +86,7 @@ Status line
 - Hierna een lege lijn. Dit geeft het einde van de headers aan.
 - Onder deze lijn komt de Body. Dit kan bijvoorbeeld een HTML bestand, afbeelding of video zijn.
 
-Hieronder een voorbeeld van een request en een resposnse:
+Hieronder een voorbeeld van een request en een response:
 
 ![HTTP Message](http.png)
 
@@ -99,11 +98,11 @@ Hieronder een voorbeeld van een request en een resposnse:
 
 | Case Naam | Handeling |  Verwacht gedrag |
 |----------|----------|------|
-| 1.Tekst in ipadres |  voer tekst in het veld in | foutmelding server start niet |
+| 1.Tekst in ip adres |  voer tekst in het veld in | foutmelding server start niet |
 | 2.Tekst in port nummer | voer tekst in het veld in | foutmelding server start niet |
 | 3.Tekst in buffergrootte | voer tekst in het veld in | foutmelding server start niet |
 | 4.Geen ipadres in ipadres veld |  voer '12345' in het veld in | foutmelding server start niet |
-| 5.Geen waardes |  voer niks in invoervelden in | foutmelding server start niet |
+| 5.Geen waardes |  voer niets in invoervelden in | foutmelding server start niet |
 
 
 
