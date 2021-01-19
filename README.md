@@ -36,7 +36,7 @@ Het TCP/IP samen is dus een overdracht protocol voor het internet. Dit protocol 
 ###  Code voorbeeld van je eigen code
 Hieronder is een stuk code uit de multichat app. In deze code is te zien hoe er data wordt ontvangen aan de hand van een networkstream.
 Deze data wordt als bytes ontvangen en vervolgens met een stringbuilder samengevoegd tot een bericht. Deze chat app maakt gebruik van een endOfTransmissionCharacter (een karakter om het einde van het bericht aan te geven). Hierna wordt dit karakter van het bericht af gehaald en toegevoegd aan UI. Omdat deze code zich op de server bevindt, wordt het bericht gebroadcast naar de aangesloten clients van de chat. 
-```
+```cs
 while (networkStream != null && networkStream.CanRead)
 {
     // Receive data from stream
